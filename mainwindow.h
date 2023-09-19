@@ -24,12 +24,13 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
     int c_min_progress = 0;
     int c_max_progress = 100;
     int c_step_progress = 10;
 
-    QStringList LP_tracks{"Lost in the Echo", "Final Masquarade"};
-    QStringList ThSecToMars_tracks{"fff", "ddd"};
+    QStringList LP_tracks{"Leave Out All the Rest", "One More Light", "In the End", "Numb", "Breaking the Habit"};
+    QStringList ThSecToMars_tracks{"Up in the Air", "A Beautiful Lie", "From Yesterday", "Kings and Queens", "Oblivion"};
 
     void TracksInit();
 };

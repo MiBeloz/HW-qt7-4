@@ -20,6 +20,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->rb_band1->setChecked(true);
     ui->rb_band2->setChecked(false);
 
+    ui->pb_progress->setCheckable(true);
+
     TracksInit();
 }
 
