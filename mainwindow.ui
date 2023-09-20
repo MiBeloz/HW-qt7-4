@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>323</width>
-    <height>215</height>
+    <height>227</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,7 +36,16 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="cBox_tracks"/>
+        <widget class="QGroupBox" name="grB_tracks">
+         <property name="title">
+          <string>GroupBox</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QComboBox" name="cBox_tracks"/>
+          </item>
+         </layout>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -72,13 +81,19 @@
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="about">
+   <widget class="QMenu" name="help">
     <property name="title">
-     <string>О программе</string>
+     <string>Справка</string>
     </property>
+    <addaction name="about"/>
    </widget>
-   <addaction name="about"/>
+   <addaction name="help"/>
   </widget>
+  <action name="about">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

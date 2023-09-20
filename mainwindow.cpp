@@ -6,10 +6,15 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    help_about = new About(this);
+    help_about->setMaximumSize(300, 150);
+    help_about->setMinimumSize(300, 150);
+    help_about->setWindowTitle("О программе");
 
     ui->grB_bands->setTitle("Музыкальные группы");
     ui->rb_band1->setText("Linkin Park");
     ui->rb_band2->setText("30 Second To Mars");
+    ui->grB_tracks->setTitle("Треки");
 
     ui->progressBar->setMinimum(0);
     ui->progressBar->setMaximum(100);
@@ -57,4 +62,10 @@ void MainWindow::on_rb_band1_clicked()
 void MainWindow::on_rb_band2_clicked()
 {
     TracksInit();
+}
+
+void MainWindow::on_about_triggered()
+{
+    help_about->setModal(true);
+    help_about->show();
 }

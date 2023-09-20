@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "about.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,8 +23,11 @@ private slots:
 
     void on_rb_band2_clicked();
 
+    void on_about_triggered();
+
 private:
     Ui::MainWindow *ui;
+    About *help_about;
 
     int c_min_progress = 0;
     int c_max_progress = 100;

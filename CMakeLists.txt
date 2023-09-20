@@ -32,6 +32,9 @@ if(ANDROID)
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    about.cpp
+    about.h
+    about.ui
   )
 else()
   add_executable(HW-qt7-4
@@ -39,6 +42,9 @@ else()
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    about.cpp
+    about.h
+    about.ui
   )
 endif()
 
