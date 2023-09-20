@@ -1,6 +1,9 @@
 *
 !build
 !build/Debug
+!build/Debug/imageformats
+!build/Debug/platforms
+!build/Debug/styles
 !.gitignore
 !CMakeLists.txt
 !*.h
